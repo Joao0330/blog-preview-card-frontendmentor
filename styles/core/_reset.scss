@@ -1,8 +1,10 @@
+@use '../abstracts/' as *;
+
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 html {
@@ -15,6 +17,9 @@ html {
 body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Figtree', sans-serif;
+	background: $color-yellow;
+	color: $color-gray-950;
 }
 
 a {

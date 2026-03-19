@@ -1,3 +1,92 @@
-/* @use '../abstracts' as *; */
+@use '../abstracts' as *;
 
-//Here i put all reusable components such as buttons, cards, navigation bars, modals, etc.
+.card {
+	max-width: 375px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	background: $color-white;
+	padding: 1.5rem;
+	border-radius: 1.25rem;
+	border: 1px solid $color-gray-950;
+	box-shadow: 10px 10px 0px $color-gray-950;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		img {
+			border-radius: 0.625rem;
+		}
+
+		figcaption {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.75rem;
+
+			span {
+				font-size: 0.75rem;
+				font-weight: 800;
+				background: $color-yellow;
+				padding: 0.25rem 0.75rem;
+				border-radius: 0.25rem;
+
+				@include breakpointMobile(1440px) {
+					font-size: 0.875rem;
+				}
+			}
+
+			time {
+				font-size: 0.75rem;
+
+				@include breakpointMobile(1440px) {
+					font-size: 0.875rem;
+				}
+			}
+
+			h1 {
+				font-size: 1.25rem;
+				font-weight: 800;
+
+				@include breakpointMobile(1440px) {
+					font-size: 1.5rem;
+					cursor: pointer;
+					transition: all 0.2s;
+
+					&:hover {
+						color: $color-yellow;
+					}
+				}
+			}
+
+			p {
+				font-size: 0.875rem;
+				color: $color-gray-500;
+				line-height: 1.5;
+
+				@include breakpointMobile(1440px) {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	&__author {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+
+		img {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+		}
+
+		figcaption {
+			font-size: 0.875rem;
+			font-weight: 800;
+		}
+	}
+}
