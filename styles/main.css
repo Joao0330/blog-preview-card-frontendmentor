@@ -59,10 +59,10 @@ main {
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.063rem;
+  height: 0.063rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.063rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -70,15 +70,15 @@ main {
 }
 
 .card {
-  max-width: 375px;
+  max-width: 23.438rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   background: hsl(0, 0%, 100%);
   padding: 1.5rem;
   border-radius: 1.25rem;
-  border: 1px solid hsl(0, 0%, 7%);
-  box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+  border: 0.063rem solid hsl(0, 0%, 7%);
+  box-shadow: 0.625rem 0.625rem 0rem hsl(0, 0%, 7%);
 }
 .card__content figure {
   display: flex;
@@ -101,7 +101,7 @@ main {
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .card__content figcaption span {
     font-size: 0.875rem;
   }
@@ -109,7 +109,7 @@ main {
 .card__content figcaption time {
   font-size: 0.75rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .card__content figcaption time {
     font-size: 0.875rem;
   }
@@ -118,7 +118,7 @@ main {
   font-size: 1.25rem;
   font-weight: 800;
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .card__content figcaption h1 {
     font-size: 1.5rem;
     cursor: pointer;
@@ -133,7 +133,7 @@ main {
   color: hsl(0, 0%, 42%);
   line-height: 1.5;
 }
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   .card__content figcaption p {
     font-size: 1rem;
   }
@@ -155,7 +155,7 @@ main {
 }
 
 footer {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
