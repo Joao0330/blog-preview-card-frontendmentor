@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/blog-preview-card-using-sass-css-rcvfCReJfw)
 - Live Site URL: [site URL](https://joao0330.github.io/blog-preview-card-frontendmentor/)
 
 ## My process
