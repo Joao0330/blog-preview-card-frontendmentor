@@ -12,9 +12,11 @@
 	box-shadow: 10px 10px 0px $color-gray-950;
 
 	&__content {
-		display: flex;
-		flex-direction: column;
-		gap: 1.5rem;
+		figure {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+		}
 
 		img {
 			border-radius: 0.625rem;
@@ -53,7 +55,7 @@
 				@include breakpointMobile(1440px) {
 					font-size: 1.5rem;
 					cursor: pointer;
-					transition: all 0.2s;
+					transition: color 0.2s ease;
 
 					&:hover {
 						color: $color-yellow;
@@ -84,7 +86,8 @@
 			border-radius: 50%;
 		}
 
-		figcaption {
+		span {
+			font-style: normal;
 			font-size: 0.875rem;
 			font-weight: 800;
 		}
